@@ -1,0 +1,27 @@
+<ion-content class="has-header blahPadding">
+
+  <div class="list card">
+
+    <div class="item">
+      <p><h2>{{ movie.title }}</h2></p>
+      <p> Release date: {{ movie.release_date }} </p>
+    </div>
+
+    <div class="item item-body">
+      <img class="full-image" ng-src="http://image.tmdb.org/t/p/w300/{{movie.poster_path}}">
+      <p>
+        {{ movie.overview }}
+      </p>
+      <p>
+        <p> Rating: {{ movie.vote_average }} </p>
+        <p> Popularity: {{ movie.popularity }} </p>
+      </p>
+    </div>
+
+  </div>
+</ion-content>
+<style>
+.blahPadding {
+  padding-top: 1
+ }
+</style>

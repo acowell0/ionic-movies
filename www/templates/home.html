@@ -1,0 +1,12 @@
+<ion-content class="has-header blahPadding">
+ <ion-list>
+  <ion-item ng-repeat="movie in movies" class="item-text-wrap item-thumbnail-left">
+      <img ng-src="{{imageBaseUrl}}{{movie.poster_path}}"><br /> <b><a ui-sref="details({movie: movie})">{{ movie.title }}</a> </b>
+  </ion-item>
+</ion-list>
+</ion-content>
+<style>
+.blahPadding {
+  padding-top: 1
+ }
+</style>
